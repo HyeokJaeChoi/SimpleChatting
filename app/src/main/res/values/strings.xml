@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SimpleChatting</string>
+    <string name="send_message">전송</string>
+    <string name="message_box_placeholder">메세지를 입력하세요..</string>
 </resources>
