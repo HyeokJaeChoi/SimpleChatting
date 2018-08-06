@@ -10,7 +10,7 @@ import com.example.hyeok.simplechatting.model.Chat
 class MeChatViewHolder(parent : ViewGroup) : RecyclerView.ViewHolder(
         LayoutInflater.from(parent.context).inflate(R.layout.chat_me, parent, false)){
 
-    private  val userNameView = itemView.findViewById<TextView>(R.id.user_name)
+    private val userNameView = itemView.findViewById<TextView>(R.id.user_name)
     private val messageView = itemView.findViewById<TextView>(R.id.message)
     private val timeStampView = itemView.findViewById<TextView>(R.id.send_time)
 

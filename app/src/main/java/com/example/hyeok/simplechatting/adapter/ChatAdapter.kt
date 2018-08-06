@@ -8,8 +8,8 @@ import com.example.hyeok.simplechatting.model.Chat
 
 class ChatAdapter(private val userName : String) : PagedListAdapter<Chat, RecyclerView.ViewHolder>(diffCallback){
 
-    private val CHAT_OF_ME = 1;
-    private val CHAT_OF_OTHER = 2;
+    private val CHAT_OF_ME = 1
+    private val CHAT_OF_OTHER = 2
 
     companion object {
         private val diffCallback = object : DiffUtil.ItemCallback<Chat>(){
@@ -31,14 +31,17 @@ class ChatAdapter(private val userName : String) : PagedListAdapter<Chat, Recycl
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) : RecyclerView.ViewHolder{
+        lateinit var viewHolder : RecyclerView.ViewHolder
         when(viewType){
             CHAT_OF_ME -> {
-                return MeChatViewHolder(parent)
+                viewHolder = MeChatViewHolder(parent)
             }
             CHAT_OF_OTHER -> {
-                return OtherChatViewHolder(parent)
+                viewHolder = OtherChatViewHolder(parent)
             }
         }
+
+        return viewHolder
     }
 
     override fun onBindViewHolder(holder : RecyclerView.ViewHolder, position: Int) {
