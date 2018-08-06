@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "296114738822",
+    "firebase_url": "https://chattingtest-41926.firebaseio.com",
+    "project_id": "chattingtest-41926",
+    "storage_bucket": "chattingtest-41926.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296114738822:android:81e0b41ef77a8320",
+        "android_client_info": {
+          "package_name": "com.example.hyeok.simplechatting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296114738822-u6o28m038vebimrpc0mapga9k2tdaui8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hyeok.simplechatting",
+            "certificate_hash": "46f8b11a1324c1202eadfd3f9affc225488e5b5f"
+          }
+        },
+        {
+          "client_id": "296114738822-6fgc401lb9inabvolne3kp30jbv87l10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQC1jwP552bKVuLWMkbby6l7vvaHnWNSU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296114738822-6fgc401lb9inabvolne3kp30jbv87l10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
