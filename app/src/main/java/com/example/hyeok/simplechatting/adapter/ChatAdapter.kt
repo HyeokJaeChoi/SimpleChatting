@@ -54,4 +54,5 @@ class ChatAdapter(private val userName : String) : PagedListAdapter<Chat, Recycl
             }
         }
     }
+
 }
