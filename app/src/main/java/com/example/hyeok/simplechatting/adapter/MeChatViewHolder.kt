@@ -17,6 +17,6 @@ class MeChatViewHolder(parent : ViewGroup) : RecyclerView.ViewHolder(
     fun bindTo(chat : Chat?){
         userNameView.text = chat?.userName
         messageView.text = chat?.message
-        timeStampView.text = chat?.timestamp as String
+        timeStampView.text = java.lang.String.valueOf(chat?.timestamp)
     }
 }

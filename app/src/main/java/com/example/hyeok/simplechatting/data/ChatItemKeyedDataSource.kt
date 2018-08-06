@@ -12,7 +12,7 @@ class ChatItemKeyedDataSource(private val mChatDatabase : DatabaseReference) : I
     override fun loadInitial(params: LoadInitialParams<Long>, callback: LoadInitialCallback<Chat>) {
         Log.d("ChatItemKeyed", params.requestedInitialKey.toString() + " " + params.requestedLoadSize)
         mChatDatabase.child("chatList").orderByChild("timestamp").limitToFirst(params.requestedLoadSize)
-                .addValueEventListener(object : ValueEventListener{
+                .addListenerForSingleValueEvent(object : ValueEventListener{
                     override fun onCancelled(p0: DatabaseError) {
                         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                     }
@@ -31,7 +31,7 @@ class ChatItemKeyedDataSource(private val mChatDatabase : DatabaseReference) : I
     override fun loadAfter(params: LoadParams<Long>, callback: LoadCallback<Chat>) {
         Log.d("ChatItemKeyed", params.key.toString())
         mChatDatabase.child("chatList").orderByChild("timestamp").startAt(params.key.toDouble()).limitToFirst(params.requestedLoadSize)
-                .addValueEventListener(object : ValueEventListener{
+                .addListenerForSingleValueEvent(object : ValueEventListener{
                     override fun onCancelled(p0: DatabaseError) {
                         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                     }

@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val config = PagedList.Config.Builder()
-                .setPageSize(20)
-                .setPrefetchDistance(10)
+                .setPageSize(10)
+                .setPrefetchDistance(5)
                 .setEnablePlaceholders(false)
                 .build()
 
